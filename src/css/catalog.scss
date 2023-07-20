@@ -1,0 +1,600 @@
+.catalog-nav {
+    margin-bottom: 29px;
+    display: flex;
+}
+
+.catalog-item {
+    font-family: "OpenSans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #999999;
+}
+
+.choisen {
+    color: #7033AC;
+}
+
+.header {
+    margin-bottom: 18px;
+}
+
+.select-block {
+    display: none;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.select-block-title {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #333333;
+    margin-right: 43px;
+}
+
+.select-block-list {
+    display: flex;
+}
+
+.select__toggle-3 {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+    padding: 9px 15px;
+    width: 187px;
+    height: 40px;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.checked-320 {
+    display: none;
+}
+
+#select-3,
+#select-4,
+#select-5,
+#select-6 {
+    width: 187px;
+    z-index: 3;
+}
+
+#select-3,
+#select-4,
+#select-5 {
+    margin-right: 32px;
+}
+
+#select-6,
+#select-5 {
+    z-index: 2;
+}
+
+.select__toggle-3 {
+    border: 2px transparent;
+    transition: border .3s ease-in-out;
+}
+
+.select__toggle-3:focus {
+    outline: 2px solid #7033AC;
+    ;
+}
+
+#select-10 {
+    display: none;
+}
+
+.select__toggle-3::after {
+    content: "";
+    background-image: url(../img/arrow_down.svg);
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 8px;
+    display: block;
+    align-self: center;
+    transition: transform .3s ease-in-out;
+}
+
+.select_show .select__dropdown-3 {
+    width: 187px;
+    display: table;
+}
+
+.select__dropdown {
+    z-index: -1;
+    top: 30px;
+}
+
+.select-button {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #A65CF0;
+    padding: 4px 0 30px 30px;
+}
+
+.select_show .select__toggle-3::after {
+    transform: rotate(180deg);
+}
+
+.select__options-margin {
+    margin-top: 17px;
+}
+
+.select__option-3 {
+    padding: 6px 0 6px 30px;
+}
+
+.select__option_selected::after {
+    display: none;
+}
+
+.catalog-aside-title {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    margin-bottom: 22px;
+}
+
+.catalog-aside-choise-title {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    color: #666666;
+}
+
+.aside-category {
+    margin-bottom: 9px;
+}
+
+.aside-price {
+    margin-bottom: 4px;
+}
+
+.catalog-checkbox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.custom-checkbox {
+    font-family: "OpenSans";
+    cursor: pointer;
+}
+
+.custom-checkbox:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.custom-checkbox>input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+
+/* для элемента label, связанного с .custom-checkbox */
+
+.custom-checkbox>span {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+
+/* создание в label псевдоэлемента before со следующими стилями */
+
+.custom-checkbox>span::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #999999;
+    margin-right: 12px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    transition: border 0.3s ease-in-out;
+}
+
+.checked {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #666666;
+    transition: color 0.3s ease-in-out;
+}
+
+
+/* стили при наведении курсора на checkbox */
+
+.custom-checkbox>input:not(:disabled):not(:checked)+span:hover::before {
+    border: 1px solid #C283F3;
+}
+
+
+/* стили для активного чекбокса (при нажатии на него) */
+
+.custom-checkbox>input:not(:disabled):active+span::before {
+    border: 1px solid #C283F3;
+    color: #C283F3;
+}
+
+
+/* стили для чекбокса, находящегося в фокусе */
+
+.custom-checkbox>input:focus+span::before {
+    border: 1px solid #C283F3;
+}
+
+.custom-checkbox>input:not(:disabled):not(:checked)+span:focus::before {
+    border: 1px solid #C283F3;
+    color: #C283F3;
+}
+
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+
+.custom-checkbox>input:focus:not(:checked)+span::before {}
+
+
+/* стили для чекбокса, находящегося в состоянии checked */
+
+.custom-checkbox>input:checked+span::before {
+    border-color: #A65CF0;
+    background-image: url("../img/chekbox.png");
+    background-size: auto;
+}
+
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+
+.custom-checkbox>input:disabled+span::before {
+    background-color: #ffffff;
+}
+
+.choices__inner {
+    width: 176px;
+    min-height: 39px;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.choices__placeholder {
+    opacity: 1;
+    padding: 9px 92px 11px 15px;
+}
+
+.choices[data-type*=select-one] .choices__inner {
+    padding-bottom: 0px;
+}
+
+.choices__list--dropdown,
+.choices__list[aria-expanded] {
+    width: 400px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.choices:focus-visible {
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.choices {}
+
+.choices[data-type*=select-one]::after {
+    right: auto;
+}
+
+.choices.is-focused.is-open {
+    width: 400px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.choices__list--single {
+    padding: 0;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.catalog-check:checked+.checked {
+    color: #C283F3;
+}
+
+.checked:focus .checked {
+    color: red;
+}
+
+.main {
+    display: flex;
+}
+
+aside {
+    float: left;
+    width: 23%;
+    margin-right: 32px;
+}
+
+.main-title {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: #333333;
+    margin-bottom: 18px;
+}
+
+.rate-list {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: unset;
+}
+
+.rate-cards-768 {
+    display: none;
+}
+
+.tabs-button-2 {
+    display: none;
+}
+
+.catalog-list-item {
+    margin-bottom: 38px;
+}
+
+.last-checkbox {
+    margin-bottom: 87px;
+}
+
+.oxford-card {
+    background-color: #333333;
+    border-radius: 10px;
+}
+
+.oxford-card-text {
+    padding: 30px;
+}
+
+.oxford-card-title {
+    font-family: 'PlayfairDisplay';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    display: inline-block;
+    color: #D5B986;
+}
+
+.oxford-card-descr {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    color: #999999;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.tabs-item {
+    display: none;
+}
+
+.tabs-item--active {
+    display: block;
+}
+
+.tabs-item768 {
+    display: none;
+}
+
+.tabs-item-active-768 {
+    display: block;
+}
+
+.tabs-item1 {
+    display: none;
+}
+
+.tabs-nav__btn--active1 {
+    display: none;
+}
+
+.tabs-item--active1 {
+    display: block;
+}
+
+.tabs-item2 {
+    display: none;
+}
+
+.tabs-nav__btn--active2 {
+    display: none;
+}
+
+.tabs-item--active2 {
+    display: block;
+}
+
+.tabs-nav-btn {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #A65CF0;
+    padding: 6px 9px;
+    background-color: transparent;
+    border: 2px solid #A65CF0;
+    border-radius: 10px;
+}
+
+.tabs-nav-btn768 {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #A65CF0;
+    padding: 6px 9px;
+    border: 2px solid #A65CF0;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.tabs-nav-btn-active768 {
+    background-color: #7033AC;
+    color: #FFFFFF;
+}
+
+.tabs-nav-btn--active {
+    background-color: #7033AC;
+    color: #FFFFFF;
+}
+
+.tabs-nav-btn768:not(:last-child) {
+    margin-right: 16px;
+}
+
+.tabs-nav-btn:not(:last-child) {
+    margin-right: 16px;
+}
+
+.tabs-nav-btn--active {
+    background-color: #7033AC;
+    color: #FFFFFF;
+}
+
+.tabs-button {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    padding-bottom: 71px;
+}
+
+.footer {
+    padding-top: 24px;
+    padding-bottom: 20px;
+}
+
+.noUi-horizontal {
+    height: 3px;
+}
+
+.noUi-target {
+    background: #EAEAEA;
+    border: none;
+    box-shadow: none;
+    height: 3px;
+}
+
+.catalog-slider-inputs {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.noUi-connect {
+    background: #A65CF0;
+}
+
+.noUi-handle::after,
+.noUi-handle::before {
+    display: none;
+}
+
+.noUi-handle {
+    box-shadow: none;
+    border-radius: unset;
+    background-color: transparent;
+    background-image: url(../img/slider-triangle.png);
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 13px;
+    height: 13px;
+    top: 2px;
+    right: -7px;
+}
+
+#catalog-slider {
+    margin-bottom: 36px;
+}
+
+.catalog-slider-text {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #666666;
+    margin-right: 7px;
+}
+
+#input-0,
+#input-1 {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #666666;
+    width: 86px;
+    height: 30px;
+    padding: 0 13px;
+}
+
+.tabs-select {
+    margin-top: unset;
+}

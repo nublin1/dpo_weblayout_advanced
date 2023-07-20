@@ -1,0 +1,162 @@
+.header {
+  padding-bottom: 8px;
+}
+
+.cooperation-main {
+  padding-top: 11px;
+  padding-bottom: 45px;
+}
+.cooperation-nav {
+  margin-bottom: 29px;
+}
+
+.cooperation-item {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #999999;
+}
+
+.choisen {
+  color: #7033AC;
+}
+
+.cooperation-main-title {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  color: #333333;
+  margin-bottom: 32px;
+}
+
+.cooperation-title {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #333333;
+  margin-bottom: 12px;
+}
+
+.cooperation-text {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  color: #666666;
+  max-width: 842px;
+  margin-bottom: 32px;
+}
+
+.cooperation-text-margin {
+  margin-bottom: 12px;
+}
+
+.get-block-list {
+  margin-bottom: 21px;
+}
+
+.get-block {
+  display: flex;
+}
+
+.cooperation-svg {
+  margin-right: 12px;
+  width: 25px;
+  height: 25px;
+}
+
+.cooperation-little-text {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #666666;
+  max-width: 587px;
+}
+
+.cooperation-little-text:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.cooperation-little-text:last-child {
+  margin-bottom: 12px;
+}
+
+.posibilites {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FF862F;
+  margin-bottom: 13px;
+  display: inline-block;
+}
+
+.cooperation-text:last-child {
+  margin-bottom: 32px;
+}
+
+.guarantee-block {
+  display: flex;
+}
+
+.guarantee-block:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.guarantee {
+  margin-bottom: 53px;
+}
+
+.guarantee-number {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 180%;
+  color: #FF862F;
+  margin-right: 12px;
+}
+
+.gurantee-text {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  color: #666666;
+  max-width: 816px;
+}
+
+.guarantee-big-text {
+  display: flex;
+
+}
+
+.guarantee-img::after {
+  content: url(../img/pen.png);
+  margin-right: 32px;
+}
+
+.guarntee-last-text {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #333333;
+  max-width: 515px;
+}
+
+
+
+/*# sourceMappingURL=sotr.css.map */

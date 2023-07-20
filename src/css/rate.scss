@@ -1,0 +1,179 @@
+.rate {
+    padding-top: 47px;
+    padding-bottom: 70px;
+}
+
+.rate-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+    margin-bottom: 32px;
+}
+
+.rate-item {
+    background: #F7F7F7;
+    border-radius: 10px;
+    padding: 28px 0;
+    position: relative;
+    height: auto;
+display: flex;
+flex-direction: column;
+}
+
+.star {
+    width: 15.73px;
+    height: 15px;
+}
+
+.rate-container-small {
+    padding: 0px 15px;
+    max-width: 296px;
+}
+
+.rate-image {
+    display: grid;
+    height: 161px;
+    align-items: flex-end;
+    margin-bottom: 16px;
+    justify-items: center;
+}
+
+.rate-container {
+    padding: 0 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.rate-btn {
+    max-width: 128px;
+    margin-top: auto;
+}
+
+.rate-rating {
+    position: absolute;
+    left: 30px;
+}
+
+.rate-item-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rating {
+    font-family: 'OpenSans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 130%;
+color: #FF862F;
+margin-left: 6px;
+}
+
+.card-tiles-width {
+    max-width: 240px;
+}
+
+.rate-button {
+   text-align: center;
+}
+
+.more {
+    display: inline-block;
+    padding: 21px 38px;
+    font-family: 'OpenSans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 100%;
+text-align: center;
+color: #FFFFFF;
+background-color: #A65CF0;
+border: 2px solid #A65CF0;
+border-radius: 10px;
+transition: background-color 0.3s ease-in-out;
+}
+
+.more:hover {
+    background-color: #C998FB;
+}
+
+.more:focus-visible {
+    background-color: #C998FB;
+    border: 2px solid #7033AC;
+    outline: unset;
+}
+
+.more:active {
+    background-color: #7033AC;
+}
+
+  .box:nth-child(n + 9) {
+    display: none;
+  }
+  
+
+.oxford {
+    background-image: url(../img/oxford-1920.jpg);
+    background-repeat: no-repeat;
+    padding-top: 153px;
+    padding-bottom: 150px;
+    background-size: cover;
+}
+
+.oxford-list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 125px;
+    padding-bottom: 150px;
+}
+
+.oxford__title {
+    font-family: 'PlayfairDisplay';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 120%;
+    color: #D5B986;
+}
+
+.oxfrod-descr {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57px;
+    color: white;
+    max-width: 508px;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.oxford-btn {
+    display: inline-block;
+    background-color: #A65CF0;
+    padding: 20px 35.5px;
+    color: white;
+    border: 2px solid #A65CF0;
+}
+
+.oxford-btn-320 {
+    display: none;
+}
+
+.oxford-btn:hover {
+    background-color: #C998FB;
+}
+
+.oxford-btn:focus-visible {
+    border: 2px solid #7033AC;
+    background-color: #C998FB;
+}
+
+.oxford-btn:active {
+    background-color: #7033AC;
+    border: 2px solid #7033AC;
+}
