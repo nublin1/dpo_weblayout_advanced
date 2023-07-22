@@ -91,6 +91,12 @@ validation
       rule: 'email',
       errorMessage: 'Недопустимый формат',
     },
+  ])
+  .addField('#happy', [
+    {
+      rule: 'required',
+      errorMessage: 'Вы должны принять пользовательское соглашение',
+    }
   ]);
 
 

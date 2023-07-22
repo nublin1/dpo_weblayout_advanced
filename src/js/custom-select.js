@@ -61,7 +61,7 @@ class CustomSelect {
             return;
         }
         this._update(option);
-        this.hide();
+        //this.hide();
     }
     show() {
         document.querySelectorAll(CustomSelect.SELECTOR_ACTIVE).forEach(select => {

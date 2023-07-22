@@ -1,4 +1,3 @@
-
 .footer {
     background: #EAEAEA;
     padding-top: 24px;
@@ -23,18 +22,29 @@
     display: flex;
 }
 
-.footer__right-list  {
+.footer__right-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 100px;
     grid-row-gap: 32px;
-    }
-    
-    .footer-grid-1 { max-width: 84px; }
-    .footer-grid-2 { max-width: 134px; }
-    .footer-grid-3 { max-width: 108px; }
-    .footer-grid-4 { max-width: 128px; }
+}
+
+.footer-grid-1 {
+    max-width: 84px;
+}
+
+.footer-grid-2 {
+    max-width: 134px;
+}
+
+.footer-grid-3 {
+    max-width: 108px;
+}
+
+.footer-grid-4 {
+    max-width: 128px;
+}
 
 .right-item-list {
     display: flex;
@@ -53,7 +63,7 @@
 }
 
 .footer-svg__item {
-cursor: pointer;
+    cursor: pointer;
 }
 
 .footer__left-item:nth-child(1) {
@@ -66,6 +76,14 @@ cursor: pointer;
 
 .footer-svg__item:hover path {
     fill: #A65CF0;
+}
+
+.focus path {
+    transition: fill .4s ease;
+}
+
+.focus:hover path {
+    fill: #7033AC
 }
 
 .footer-svg__item:focus-visible path {
@@ -89,32 +107,46 @@ cursor: pointer;
 
 .right-item-item {
     font-family: 'OpenSans';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 100%;
-color: #999999;
-cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #999999;
+    cursor: pointer;
+
+    a{
+        color: #999999;
+        transition: color 0.3s ease-in-out;
+        cursor: pointer;
+        position: relative;
+    }
+   a:hover {
+        color: #A65CF0;
+    }
+
+    a:active {
+        color: #A65CF0;
+    }
 }
 
 .footer-title {
     font-family: 'OpenSans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 100%;
-color: #333333;
-cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #333333;
+    cursor: pointer;
 }
 
 .last-words {
     font-family: 'OpenSans';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 19px;
-text-align: center;
-color: #999999;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #999999;
 }
 
 .last {

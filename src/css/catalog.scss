@@ -10,6 +10,16 @@
     font-size: 14px;
     line-height: 100%;
     color: #999999;
+
+    transition: color 0.3s ease-in-out;      
+}
+
+.catalog-item:hover {
+    color: #7033AC;
+}
+
+.catalog-item:active {
+    color: #7033AC;
 }
 
 .choisen {
@@ -556,7 +566,7 @@ main {
     box-shadow: none;
     border-radius: unset;
     background-color: transparent;
-    background-image: url(../img/slider-triangle.png);
+    background-image: url(../img/slider-triangle.svg);
     background-repeat: no-repeat;
     border: none;
 }
