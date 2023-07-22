@@ -1,35 +1,4 @@
-const swiper5 = new Swiper(".swiper-container-5", {
-  slidesPerView: "auto",
-  loop: false,
-  slidesPerView: 4,
-  slidesPerGroup: 4,
-  navigation: {
-    nextEl: ".card-button-next",
-    prevEl: ".card-button-prev",
-  },
-  breakpoints: {
-    1251: {
-      slidesPerView: "auto",
-      spaceBetween: 38,
-    },
-    979: {
-      direction: "horizontal",
-      spaceBetween: 38,
-      slidesPerView: 3,
-    },
-    577: {
-      direction: "vertical",
-      spaceBetween: 18,
-      slidesPerView: 4,
-    },
-    320: {
-      direction: "horizontal",
-      spaceBetween: 38,
-      slidesPerView: 2,
-      slidesPerGroup: 1,
-    },
-  },
-});
+
 
 const swiper6 = new Swiper(".swiper-container-6", {
   loop: false,
@@ -80,6 +49,47 @@ const swiper7 = new Swiper(".swiper-container-7", {
     },
     978: {
       slidesPerView: "auto",
+    },
+  },
+});
+
+const swiper777 = new Swiper(".swiper-container-777", {
+  loop: false,
+  spaceBetween: 70,  
+});
+
+const swiper5 = new Swiper(".swiper-container-5", {
+  slidesPerView: "auto",
+  loop: false,
+  slidesPerView: 4,
+  slidesPerGroup: 4,
+  // thumbs: {
+  //   swiper: swiper777,
+  // },
+  navigation: {
+    nextEl: ".card-button-next",
+    prevEl: ".card-button-prev",
+  },
+  breakpoints: {
+    1251: {
+      slidesPerView: "auto",
+      spaceBetween: 8,
+    },
+    979: {
+      direction: "horizontal",
+      spaceBetween: 38,
+      slidesPerView: 3,
+    },
+    577: {
+      direction: "vertical",
+      spaceBetween: 18,
+      slidesPerView: 4,
+    },
+    320: {
+      direction: "horizontal",
+      spaceBetween: 38,
+      slidesPerView: 2,
+      slidesPerGroup: 1,
     },
   },
 });
