@@ -301,11 +301,11 @@
 }
 
 .similar-button-next:after {
-    content:"";
+    content: "";
     background-image: url('../img/arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size:100% 100%;
+    background-size: 100% 100%;
     position: absolute;
     display: block;
     min-height: 100%;
@@ -325,13 +325,42 @@
     background-image: url(../img/status=active.svg);
 }
 
-.swiper-view {
-    max-width: 620px;
+.swiper-container-777 {
     overflow: hidden;
 }
 
+.swiper-view {
+    max-width: 620px;
+    //overflow: hidden;
+    align-items: center;
+}
+
+
+.swiper-view-2 {
+    max-width: 620px;    
+    align-items: center;
+}
+
 .swiper-5 {
- justify-content: space-between
+    justify-content: space-between;
+    align-items: center;
+}
+
+.swiper-555 {
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.swiper-slide-555 {
+   width: fit-content;
+}
+
+.center {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 // .similar-button-next-320 {
@@ -465,7 +494,7 @@
 }
 
 .modal-3-down {
-    display: flex;
+   //display: flex;
     justify-content: space-between;
     background-color: #F6F6F6;
     padding: 20px 50px;
@@ -475,28 +504,42 @@
     display: none;
 }
 
+.modal-buttons {
+   // position: relative;
+}
+
 .modal-button-prev {
     right: unset;
     top: unset;
     left: 16px;
     bottom: 60px;
+    width: 32px;
+    height: 32px;
 }
 
 .modal-button-prev:after {
-    content: url(../img/arrow.svg);
+    content:"";
+    background-image: url('../img/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100% 100%;
+    position: absolute;
+    display: block;
+    min-height: 100%;
+    min-width: 100%;
     transform: rotate(180deg);
 }
 
 .modal-button-prev:hover::after {
-    content: url(../img/status=hover.svg);
+    background-image: url(../img/status=hover.svg);
 }
 
 .modal-button-prev:focus::after {
-    content: url(../img/status=focus.svg);
+    background-image: url(../img/status=focus.svg);
 }
 
 .modal-button-prev:active::after {
-    content: url(../img/status=active.svg);
+    background-image: url(../img/status=active.svg);
 }
 
 .modal-button-next {
@@ -504,6 +547,8 @@
     top: unset;
     left: unset;
     bottom: 60px;
+    width: 32px;
+    height: 32px;
 }
 
 .modal-slide:first-child {
@@ -523,19 +568,28 @@
 }
 
 .modal-button-next:after {
-    content: url('../img/arrow.svg');
+    content:"";
+    background-image: url('../img/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100% 100%;
+    position: absolute;
+    display: block;
+    min-height: 100%;
+    min-width: 100%;
+    transition: all 0.3s ease-in-out;
 }
 
 .modal-button-next:hover::after {
-    content: url(../img/status=hover.svg);
+    background-image: url(../img/status=hover.svg);
 }
 
 .modal-button-next:focus::after {
-    content: url(../img/status=focus.svg);
+    background-image: url(../img/status=focus.svg);
 }
 
 .modal-button-next:active::after {
-    content: url(../img/status=active.svg);
+    background-image: url(../img/status=active.svg);
 }
 
 .modal-swiper {

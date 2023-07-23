@@ -1,5 +1,3 @@
-
-
 const swiper6 = new Swiper(".swiper-container-6", {
   loop: false,
   spaceBetween: 38,
@@ -53,16 +51,10 @@ const swiper7 = new Swiper(".swiper-container-7", {
   },
 });
 
-const swiper777 = new Swiper(".swiper-container-777", {
+const swiper5 = new Swiper(document.getElementById("swiper5"), {
   loop: false,
-  spaceBetween: 70,  
-});
-
-const swiper5 = new Swiper(".swiper-container-5", {
-  slidesPerView: "auto",
-  loop: false,
-  slidesPerView: 4,
-  slidesPerGroup: 4,
+  slidesPerView: 5,
+  slidesPerGroup: 5,
   // thumbs: {
   //   swiper: swiper777,
   // },
@@ -91,6 +83,58 @@ const swiper5 = new Swiper(".swiper-container-5", {
       slidesPerView: 2,
       slidesPerGroup: 1,
     },
+  },
+});
+
+const swiper555 = new Swiper(document.getElementById("swiper555"), {
+  loop: false,
+  slidesPerView: 5,
+  slidesPerGroup: 5, 
+  onlyExternal:true,
+  navigation: {
+    nextEl: ".card-button-next",
+    prevEl: ".card-button-prev",
+  },
+  breakpoints: {
+    1251: {
+      slidesPerView: "auto",
+      spaceBetween: 8,
+    },
+    979: {
+      direction: "horizontal",
+      spaceBetween: 38,
+      slidesPerView: 3,
+    },
+    577: {
+      direction: "vertical",
+      spaceBetween: 18,
+      slidesPerView: 4,
+    },
+    320: {
+      direction: "horizontal",
+      spaceBetween: 38,
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+    },
+  },
+});
+
+
+
+const swiper777 = new Swiper(document.getElementById("swiper777"), {
+  loop: false,
+  spaceBetween: 70,
+  thumbs: {
+    swiper: swiper5,  
+  },
+});
+
+
+const swiper777_2 = new Swiper(document.getElementById("swiper777-2"), {
+  loop: false,
+  spaceBetween: 70,
+  thumbs: {
+    swiper: swiper555,
   },
 });
 
